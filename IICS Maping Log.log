@@ -1,0 +1,189 @@
+Agent Group Id: 01D4YJ25000000000002
+Agent Group Name: InfTable
+Agent Name: InfTable
+Agent Id: 01D4YJ08000000000002
+Task Name: MappingTask_capstone
+Task Type: MTT
+Task Id: 01D4YJ0Z00000000000X
+Run Id: 1
+Service Id: 2558405
+Started By: arun.10827426@ltimindtree.com
+Run Context Type: ICS_UI
+02/18/2025 06:15:17 **** Importing Connection: Conn_01D4YJ0B000000000002 ...
+02/18/2025 06:15:17 **** Importing Connection: Conn_01D4YJ0B000000000006 ...
+02/18/2025 06:15:17 **** Importing Source Definition: CAPS ...
+02/18/2025 06:15:17 **** Importing Target Definition: CAPS ...
+02/18/2025 06:15:17 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  CAPS...
+    Validating Target Definition  CAPS...
+02/18/2025 06:15:17 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+02/18/2025 06:15:17 **** Importing Workflow: wf_mtt_01D4YJ0Z00000000000X ...
+    <Warning> :  Invalid value false for attribute Truncate Target Table. Will use the default value NO    [Session< s_mtt_01D4YJ0Z00000000000X >  --> SnowflakeCloudDataWarehouseV2_table Writer< SnowflakeCloudDataWarehouseV2_table Writer > ] 
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_01D4YJ0Z00000000000X > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_01D4YJ0Z00000000000X].  Starting repository sequence id is [577748850]
+======================================================================
+PETL_24036 [2025-02-18 06:15:16.538] Beginning the prepare phase for the session.
+TM_6721 [2025-02-18 06:15:16.540] Started [Connect to Repository].
+TM_6722 [2025-02-18 06:15:16.964] Finished [Connect to Repository].  It took [0.423929] seconds.
+TM_6721 [2025-02-18 06:15:16.970] Started [Fetch Session from Repository].
+TM_6722 [2025-02-18 06:15:17.232] Finished [Fetch Session from Repository].  It took [0.262] seconds.
+VAR_27085 [2025-02-18 06:15:17.310] Parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_01D4YJ0Z00000000000X.param] is opened for [session [wf_mtt_01D4YJ0Z00000000000X.s_mtt_01D4YJ0Z00000000000X]].
+VAR_27062 [2025-02-18 06:15:17.311] Warning! Cannot find section for worklet [wf_mtt_01D4YJ0Z00000000000X] and folder [] in parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_01D4YJ0Z00000000000X.param].
+TM_6721 [2025-02-18 06:15:17.466] Started [Partition Group Formation].
+TM_6722 [2025-02-18 06:15:17.469] Finished [Partition Group Formation].  It took [0.00398588] seconds.
+PETL_24037 [2025-02-18 06:15:17.470] Finished the prepare phase for the session.
+DIRECTOR> TM_6228 [2025-02-18 06:15:17.473] Writing session output to log file [C:\PROGRA~1\INFORM~1\apps\Data_Integration_Server\data\..\logs\s_mtt_l0htQzdvHqwd6xdxcs4XSy_1.log].
+DIRECTOR> VAR_27085 [2025-02-18 06:15:17.476] Parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_01D4YJ0Z00000000000X.param] is opened for [session [wf_mtt_01D4YJ0Z00000000000X.s_mtt_01D4YJ0Z00000000000X]].
+DIRECTOR> VAR_27062 [2025-02-18 06:15:17.476] Warning! Cannot find section for worklet [wf_mtt_01D4YJ0Z00000000000X] and folder [] in parameter file [C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\data\parameters\s_mtt_01D4YJ0Z00000000000X.param].
+DIRECTOR> TM_6014 [2025-02-18 06:15:17.481] Initializing session [s_mtt_01D4YJ0Z00000000000X] at [Tue Feb 18 06:15:17 2025].
+DIRECTOR> TM_6683 [2025-02-18 06:15:17.481] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2025-02-18 06:15:17.481] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2025-02-18 06:15:17.481] Folder: []
+DIRECTOR> TM_6685 [2025-02-18 06:15:17.481] Workflow: [wf_mtt_01D4YJ0Z00000000000X] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2025-02-18 06:15:17.481] Operating System Type [NT]
+DIRECTOR> TM_6101 [2025-02-18 06:15:17.482] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2025-02-18 06:15:17.484] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2025-02-18 06:15:17.488] Session [s_mtt_01D4YJ0Z00000000000X] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0320].
+MANAGER> PETL_24091 [2025-02-18 06:15:18.621] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2025-02-18 06:15:18.621] Running Partition Group [1].
+MANAGER> PETL_24000 [2025-02-18 06:15:18.622] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2025-02-18 06:15:18.623] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2025-02-18 06:15:18.624] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2025-02-18 06:15:18.624] Initializing session run.
+MAPPING> PETL_24091 [2025-02-18 06:15:18.624] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2025-02-18 06:15:18.642] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2025-02-18 06:15:18.642] Server Code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+MAPPING> TM_6151 [2025-02-18 06:15:18.642] The session sort order is [Binary].
+MAPPING> TM_6185 [2025-02-18 06:15:18.642] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65109 [2025-02-18 06:15:18.642] Current Timezone:[UTC +0:0]
+MAPPING> CMN_65111 [2025-02-18 06:15:18.642] Current Process ID:[1912]
+MAPPING> TM_6155 [2025-02-18 06:15:18.642] Using HIGH precision processing.
+MAPPING> TM_6180 [2025-02-18 06:15:18.642] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2025-02-18 06:15:18.642] Session target-based commit interval is [10000].
+MAPPING> PMJVM_42020 [2025-02-18 06:15:18.820] [INFO] Loaded library : C:\PROGRA~1\INFORM~1\jdk\jre\bin\server\jvm.dll.
+MAPPING> PMJVM_42009 [2025-02-18 06:15:18.925] [INFO] Created Java VM successfully.
+MAPPING> SDKS_38029 [2025-02-18 06:15:20.688] Loaded plug-in 605501: [plugin description].
+MAPPING> SDKS_38024 [2025-02-18 06:15:21.733] Plug-in 605501 initialization complete.
+MAPPING> SDKS_38017 [2025-02-18 06:15:21.733] Writer SDK plug-in initialization complete.
+MAPPING> CONNECTOR_10000 [2025-02-18 06:15:23.104] [INFO] The target object at runtime is overridden with the parameter name = CAPS table name = CAPS.
+MAPPING> SDKS_38509 [2025-02-18 06:15:23.294] SDK target and group initialization complete.
+MAPPING> TM_6307 [2025-02-18 06:15:23.295] DTM error log disabled. 
+MAPPING> TE_7022 [2025-02-18 06:15:23.299] TShmWriter: Initialized
+MAPPING> TM_6007 [2025-02-18 06:15:23.495] DTM initialized successfully for session [s_mtt_01D4YJ0Z00000000000X]
+DIRECTOR> PETL_24033 [2025-02-18 06:15:23.495] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2025-02-18 06:15:23.495] Starting pre-session tasks. : (Tue Feb 18 06:15:23 2025)
+PRE-SESS> PETL_24091 [2025-02-18 06:15:23.496] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2025-02-18 06:15:23.672] Pre-session task completed successfully. : (Tue Feb 18 06:15:23 2025)
+DIRECTOR> PETL_24006 [2025-02-18 06:15:23.672] Starting data movement.
+MAPPING> TM_6966 [2025-02-18 06:15:23.672] Reducing estimate of the amount of buffer pool memory required for high performance.
+MAPPING> TM_6660 [2025-02-18 06:15:23.680] Total Buffer Pool size is 5704298800 bytes and Block size is 570425880 bytes.
+READER_1_1_1> PETL_24091 [2025-02-18 06:15:23.683] Thread [READER_1_1_1] has the ID [5].
+READER_1_1_1> DBG_21438 [2025-02-18 06:15:23.720] Reader: Source is [odbc://dbtype=Oracle;host=localhost;port=1521;database=XE], Type [ODBC], User [Arunkumar]
+READER_1_1_1> BLKR_16051 [2025-02-18 06:15:23.760] Source database connection [Conn_01D4YJ0B000000000002] code page: [MS Windows Latin 1 (ANSI), superset of Latin1]
+READER_1_1_1> CMN_1021 [2025-02-18 06:15:24.364] Database driver event...
+CMN_1021 [Reading driver properties from : C:\Program Files\Informatica Cloud Secure Agent\apps\Data_Integration_Server\71.0.4.2\ICS\main\bin\rdtm/../../../../drivers/driver.properties
+DTM flag to determine driver name is not found hence default to [DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE] driver.
+ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=DataDirect CLOSED 8.0 Oracle Wire Protocol for Informatica - BASE;Host=localhost;ServiceName=XE;Port=1521;UID=Arunkumar;AS=6000000;EBL=0;ENS=1;IACP=4;ETWT=1;WorkArounds2=2;EnableEmptyLobs=1]. userid = [Arunkumar]
+ODBC Version:	03.80.0000
+.
+DBMS Name:	Oracle
+.
+DBMS Version:	11.02.0000 Oracle 11.2.0.2.0
+.
+Driver Name:	dwora28.dll
+.
+Driver Version:	08.02.3072 (B1917, U1723)
+.
+Driver ODBC Version:	03.52
+.]
+
+READER_1_1_1> BLKR_16003 [2025-02-18 06:15:24.364] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2025-02-18 06:15:24.365] Thread [TRANSF_1_1_1] has the ID [6].
+WRITER_1_*_1> PETL_24091 [2025-02-18 06:15:24.365] Thread [WRITER_1_*_1] has the ID [7].
+WRITER_1_*_1> CONNECTOR_10000 [2025-02-18 06:15:24.756] [INFO] Normal Mode (Non-Bulk Processing) is enabled to Write data
+WRITER_1_*_1> SNOWFLAKECLOUDDATAWAREHOUSE_10000 [2025-02-18 06:15:24.919] [INFO] Authentication type is set to: Standard
+WRITER_1_*_1> SNOWFLAKECLOUDDATAWAREHOUSE_10000 [2025-02-18 06:15:28.053] [INFO] The Snowflake Connector uses the following JDBC URL to connect to Snowflake: jdbc:snowflake://vvvzpww-fd52699.snowflakecomputing.com/?warehouse=COMPUTE_WH&SSL=on&application=INFA_DI_Cloud
+WRITER_1_*_1> WRT_8270 [2025-02-18 06:15:29.022] Target connection group #1 consists of target(s) [CAPS: Partition 1]
+WRITER_1_*_1> WRT_8003 [2025-02-18 06:15:29.022] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2025-02-18 06:15:29.022] Reader run started.
+WRITER_1_*_1> WRT_8005 [2025-02-18 06:15:29.022] Writer run started.
+WRITER_1_*_1> WRT_8158 [2025-02-18 06:15:29.023] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Tue Feb 18 06:15:28 2025
+
+Target tables:
+
+     CAPS: Partition 1
+
+
+READER_1_1_1> RR_4010 [2025-02-18 06:15:29.023] SQ instance [Source] SQL Query [SELECT ARUNKUMAR.CAPS.DEPARTMENT, ARUNKUMAR.CAPS.CATEGORY, ARUNKUMAR.CAPS.SUBCATEGORY, ARUNKUMAR.CAPS.PRODUCT_NAME, ARUNKUMAR.CAPS.PRODUCT_ID, ARUNKUMAR.CAPS.TITLE, ARUNKUMAR.CAPS.PRODUCT_TYPE, ARUNKUMAR.CAPS.PRODUCT_SIZE, ARUNKUMAR.CAPS."LABEL", ARUNKUMAR.CAPS.COLOR, ARUNKUMAR.CAPS.BRAND, ARUNKUMAR.CAPS.AVAILABILITY, ARUNKUMAR.CAPS.ORDER_ID, ARUNKUMAR.CAPS.PAYMENT_METHOD, ARUNKUMAR.CAPS.ORDER_DATE, ARUNKUMAR.CAPS.CITY, ARUNKUMAR.CAPS.STATE, ARUNKUMAR.CAPS.COUNTRY, ARUNKUMAR.CAPS.REGION, ARUNKUMAR.CAPS.QUANTITY, ARUNKUMAR.CAPS.DISCOUNT, ARUNKUMAR.CAPS.SALES, ARUNKUMAR.CAPS.PROFIT FROM ARUNKUMAR.CAPS]
+READER_1_1_1> RR_4049 [2025-02-18 06:15:29.023] SQL Query issued to database : (Tue Feb 18 06:15:29 2025)
+READER_1_1_1> RR_4050 [2025-02-18 06:15:29.126] First row returned from database to reader : (Tue Feb 18 06:15:29 2025)
+WRITER_1_*_1> WRT_8167 [2025-02-18 06:15:29.127] Start loading table [CAPS: Partition 1] at: Tue Feb 18 06:15:28 2025
+READER_1_1_1> DBG_21699 [2025-02-18 06:15:29.272] Waiting for consumer to free buffer block. Please increase the dtm buffer pool size.
+READER_1_1_1> BLKR_16019 [2025-02-18 06:15:31.216] Read [30088] rows, read [0] error rows for source table [CAPS] instance name [CAPS]
+READER_1_1_1> BLKR_16008 [2025-02-18 06:15:31.217] Reader run completed.
+TRANSF_1_1_1> DBG_21216 [2025-02-18 06:15:31.360] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8168 [2025-02-18 06:15:31.360] End loading table [CAPS: Partition 1] at: Tue Feb 18 06:15:30 2025
+WRITER_1_*_1> SNOWFLAKECLOUDDATAWAREHOUSE_10000 [2025-02-18 06:15:31.360] [INFO] The Snowflake Connector completed writing data to the target.
+WRITER_1_*_1> WRT_8035 [2025-02-18 06:15:40.402] Load complete time: Tue Feb 18 06:15:39 2025
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: CAPS: Partition 1 (Instance Name: [CAPS])
+WRT_8038 Inserted rows - Requested: 30088      Applied: 30088      Rejected: 0          Affected: 30088     
+
+
+WRITER_1_*_1> WRT_8043 [2025-02-18 06:15:40.402] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2025-02-18 06:15:40.402] Writer run completed.
+MANAGER> PETL_24031 [2025-02-18 06:15:40.408] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed.
+	Total Run Time = [2.194763] secs
+	Total Idle Time = [1.287567] secs
+	Busy Percentage = [41.334575]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed.
+	Total Run Time = [2.233133] secs
+	Total Idle Time = [1.902100] secs
+	Busy Percentage = [14.823732]
+	Transformation-specific statistics for this thread were not accurate enough to report.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [CAPS] has completed.
+	Total Run Time = [11.274422] secs
+	Total Idle Time = [0.205927] secs
+	Busy Percentage = [98.173504]
+
+MANAGER> PETL_24005 [2025-02-18 06:15:40.622] Starting post-session tasks. : (Tue Feb 18 06:15:40 2025)
+POST-SESS> PETL_24091 [2025-02-18 06:15:40.623] Thread [POST-SESS] has the ID [8].
+MANAGER> PETL_24029 [2025-02-18 06:15:40.685] Post-session task completed successfully. : (Tue Feb 18 06:15:40 2025)
+MAPPING> SDKS_38510 [2025-02-18 06:15:40.685] SDK target and group deinitialized with status [0].
+MAPPING> SDKS_38025 [2025-02-18 06:15:40.686] Plug-in 605501 deinitialized and unloaded with status [0].
+MAPPING> SDKS_38019 [2025-02-18 06:15:40.686] Writer SDK plug-ins deinitialized with status [0].
+MAPPING> TM_6018 [2025-02-18 06:15:40.687] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2025-02-18 06:15:40.883] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2025-02-18 06:15:40.945] Session run completed successfully.
+DIRECTOR> TM_6022 [2025-02-18 06:15:40.945] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2025-02-18 06:15:40.945] Source Load Summary.
+DIRECTOR> CMN_1740 [2025-02-18 06:15:40.945] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [30088], Affected Rows [30088], Applied Rows [30088], Rejected Rows [0]
+DIRECTOR> TM_6253 [2025-02-18 06:15:40.946] Target Load Summary.
+DIRECTOR> CMN_1740 [2025-02-18 06:15:40.946] Table: [CAPS] (Instance Name: [CAPS] Instance UI Name: [Target])
+	 Output Rows [30088], Affected Rows [30088], Applied Rows [30088], Rejected Rows [0]
+DIRECTOR> TM_6023 [2025-02-18 06:15:40.946] 
+===================================================
+
+DIRECTOR> TM_6020 [2025-02-18 06:15:40.946] Session [s_mtt_01D4YJ0Z00000000000X] completed at [Tue Feb 18 06:15:40 2025].
